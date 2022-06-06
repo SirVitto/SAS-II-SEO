@@ -1,0 +1,66 @@
+/* medidas*/ 
+.main-medidas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+                        "ban" 
+                        "med1"
+                        "med2"
+                        "amalo"
+                        "mainP"
+                        "barra";
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+}
+
+m1{
+    grid-area: med1;
+}
+m2{
+    grid-area: med2;
+}
+
+
+
+
+/* Nosotras*/
+
+.info-nos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+                        "ban" 
+                        "noscel"
+                        "info"
+                        "mainP"
+                        "barra"
+                        "footer";
+    margin-top: 0.3rem;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1rem; 
+}
+
+.nos-cel{
+    grid-area: noscel;
+}
+.in-fo{
+    grid-area: info;
+    padding: 1rem;
+}
+
+.nosotras{
+    display: none;
+}
+
+/* contacto */
+
+.conTacto{
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.5rem; 
+    text-align: center;
+    padding: 5rem;
+}

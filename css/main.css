@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* variables*/
+header .nav-estilo, .barra-pie {
+  background-color: Whitesmoke;
+  font-size: 1.2rem; }
+
+/*nav arriba*/
+header .nav-estilo {
+  font-family: 'Open Sans', sans-serif; }
+  header .nav-estilo .navbar-brand {
+    justify-content: center; }
+
+/* barra pie*/
+.barra-pie {
+  font-family: 'Open Sans', sans-serif; }
+
+.main-nosotros {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "ban"  "imagen3" "invcel" "amalo" "mainP" "barra" "footer";
+  margin-top: 0.3rem;
+  justify-content: center; }
+  .main-nosotros .ban1 {
+    grid-area: ban;
+    display: grid;
+    justify-content: center; }
+
+.imagen3 {
+  grid-area: imagen3;
+  display: grid;
+  justify-content: center; }
+
+.inv-cel {
+  grid-area: invcel;
+  display: grid;
+  justify-content: center; }
+
+.mis-amalo {
+  background-color: Whitesmoke;
+  font-size: 1rem;
+  display: grid;
+  grid-area: amalo;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0.5rem;
+  justify-content: center;
+  margin: 0.5rem; }
+
+.nos-mision {
+  background-color: Whitesmoke;
+  font-size: 1rem;
+  display: flexbox;
+  height: 3rem;
+  grid-area: mainP;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0.5rem;
+  margin: 0.5rem; }
+
+.barra-pie {
+  background-color: Whitesmoke;
+  margin-top: 0.5rem; }
+
+.barra {
+  grid-area: barra;
+  margin-top: 0.2rem; }
+
+/* no mostrar en celular*/
+.inv-gr {
+  display: none; }
+
+.ban2 {
+  display: none; }
+
+.imagen4 {
+  display: none; }
+
+/* Anillos Pulseras y Mix AMALO*/
+.main-noso {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "ban" "productos" "amalo" "mainP" "barra" "footer";
+  margin-top: 0.3rem;
+  justify-content: center; }
+  .main-noso .ban1 {
+    grid-area: ban;
+    display: grid;
+    justify-content: center; }
+
+.main-productos {
+  grid-area: productos; }
+
+.card-text {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem; }
+
+.card:hover {
+  transform: scale(1.04); }
+
+/* medidas*/
+.main-medidas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "ban"  "med1" "med2" "amalo" "mainP" "barra";
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 1rem; }
+
+m1 {
+  grid-area: med1; }
+
+m2 {
+  grid-area: med2; }
+
+/* Nosotras*/
+.info-nos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "ban"  "noscel" "info" "mainP" "barra" "footer";
+  margin-top: 0.3rem;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem; }
+
+.nos-cel {
+  grid-area: noscel; }
+
+.in-fo {
+  grid-area: info;
+  padding: 1rem; }
+
+.nosotras {
+  display: none; }
+
+/* contacto */
+.conTacto {
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 5rem; }
+
+/*estilo del footer*/
+footer p {
+  grid-area: footer;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 0.8rem; }
+
+.fot-nos {
+  grid-area: footer; }
+
+/* mq */
+@media screen and (min-width: 760px) {
+  /* Home tb */
+  /*no mostrar*/
+  .inv-gr {
+    display: none; }
+  .imagen3 {
+    display: none; }
+  .main-nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "ban ban"  "invcel invcel" "imagen4 imagen4" "amalo amalo" "mainP mainP" "barra barra" "footer footer";
+    margin-top: 0.3rem;
+    justify-content: center;
+    width: auto; }
+  .ban1 {
+    grid-area: ban;
+    display: grid;
+    justify-content: center; }
+  .inv-cel {
+    width: 10%;
+    grid-area: invcel;
+    display: grid;
+    margin: auto; }
+  .imagen4 {
+    grid-area: imagen4;
+    display: grid; }
+  header .nav-estilo {
+    background-color: Whitesmoke;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif; }
+  header .nav-estilo .navbar-brand {
+    justify-content: center; }
+  .barra-pie {
+    background-color: Whitesmoke;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif; }
+  .amalo-mis {
+    background-color: White Whitesmoke;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    max-height: fit-content; }
+  .nos-mision {
+    background-color: White Whitesmoke;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    max-height: fit-content; }
+  /*NOSOTRAS tb */
+  /*no mostrar*/
+  .nosotras {
+    display: none; }
+  .in-fo {
+    grid-area: info;
+    display: grid;
+    margin: auto;
+    margin: 2rem; }
+  .no-cel {
+    grid-area: foto;
+    display: grid; }
+  .info-nos {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-areas: "foto" "info" "mainP" "barra" "footer";
+    margin-top: 0.3rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem; }
+  /*MEDIDAS tb */
+  .m1 {
+    grid-area: m1;
+    display: grid;
+    margin: auto; }
+  .m2 {
+    grid-area: m2;
+    display: grid;
+    margin: auto; }
+  .main-medidas {
+    display: grid;
+    grid-template-columns: 1rem;
+    grid-template-areas: "m1 m1 m2 m2" "mainP  mainP mainP  mainP" "barra barra barra barra" "footer footer footer footer";
+    margin-top: 0.3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem; }
+  .m1 {
+    grid-area: m1; }
+  .m2 {
+    grid-area: m2; } }
+
+@media screen and (min-width: 1020px) {
+  /* Home pc */
+  /*no mostrar*/
+  .inv-cel {
+    display: none; }
+  .phone {
+    display: none; }
+  .main-nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "ban ban ban"  "invcel imagen4 imagen4" "amalo amalo amalo" "mainP mainP mainP" "barra barra barra" "footer footer footer";
+    margin-top: 0.3rem;
+    justify-content: center; }
+  .ban2 {
+    grid-area: ban;
+    display: grid;
+    justify-content: center; }
+  .inv-gr {
+    grid-area: invcel;
+    display: grid;
+    margin: auto; }
+  .imagen4 {
+    grid-area: imagen4;
+    display: grid; }
+  header .nav-estilo {
+    background-color: Whitesmoke;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif; }
+  header .nav-estilo .navbar-brand {
+    justify-content: center; }
+  .barra-pie {
+    background-color: Whitesmoke;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif; }
+  .amalo-mis {
+    background-color: White Whitesmoke;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    max-height: fit-content; }
+  .nos-mision {
+    background-color: White Whitesmoke;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    max-height: fit-content; }
+  /*NOSOTRAS PC */
+  /*no mostrar*/
+  .nos-cel {
+    display: none; }
+  .in-fo {
+    grid-area: info;
+    display: grid;
+    margin: auto;
+    margin: 2rem; }
+  .nosotras {
+    grid-area: foto;
+    display: grid;
+    margin: auto; }
+  .info-nos {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-areas: "foto info info" "mainP mainP mainP" "barra barra barra" "footer footer footer";
+    margin-top: 0.3rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem; }
+  /*MEDIDAS PC */
+  .m1 {
+    grid-area: m1;
+    display: grid;
+    margin: auto; }
+  .m2 {
+    grid-area: m2;
+    display: grid;
+    margin: auto; }
+  .main-medidas {
+    display: grid;
+    grid-template-columns: 1rem;
+    grid-template-areas: "m1 m1 m2 m2" "mainP  mainP mainP  mainP" "barra barra barra barra" "footer footer footer footer";
+    margin-top: 0.3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem; }
+  .m1 {
+    grid-area: m1; }
+  .m2 {
+    grid-area: m2; } }

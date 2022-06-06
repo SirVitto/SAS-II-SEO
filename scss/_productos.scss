@@ -1,0 +1,43 @@
+/* Anillos Pulseras y Mix AMALO*/
+
+
+.main-noso{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+                        "ban"
+                        "productos"
+                        "amalo"
+                        "mainP"
+                        "barra"
+                        "footer";
+    margin-top: 0.3rem;
+    justify-content: center;
+    .ban1{
+        grid-area: ban;
+        display: grid;
+        justify-content: center;                
+    }
+}
+
+.main-productos{
+    grid-area: productos;
+
+}
+
+.card-text{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.card:hover {
+    transform: scale(1.04);
+}
+
+
+
+
+
+
+

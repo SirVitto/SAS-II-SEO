@@ -1,0 +1,14 @@
+/*estilo del footer*/
+footer p{
+    grid-area: footer;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 0.8rem;
+}
+
+.fot-nos{
+    grid-area: footer;
+}

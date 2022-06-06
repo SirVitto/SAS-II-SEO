@@ -1,0 +1,303 @@
+
+/* mq */
+
+@media screen and (min-width:760px){
+/* Home tb */
+
+/*no mostrar*/
+
+.inv-gr{
+    display: none;
+}
+.imagen3{
+    display: none;
+}
+
+.main-nosotros{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+                        "ban ban" 
+                        "invcel invcel"
+                        "imagen4 imagen4"
+                        "amalo amalo"
+                        "mainP mainP"
+                        "barra barra"
+                        "footer footer";
+    margin-top: 0.3rem;
+    justify-content: center;
+    width: auto;
+}
+
+.ban1{
+    grid-area: ban;
+    display: grid;
+    justify-content: center;                
+}
+.inv-cel{
+    width: 10%;
+    grid-area: invcel;
+    display: grid;
+    margin: auto;
+            
+}
+.imagen4{
+    grid-area: imagen4;
+    display: grid;        
+}
+
+header .nav-estilo {
+    @include estilo ($color-secundario, 1.5rem,);
+    font-family: 'Open Sans', sans-serif; }
+    header .nav-estilo .navbar-brand {
+    justify-content: center; }
+
+.barra-pie {
+    background-color: $color-secundario;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.amalo-mis{
+
+    background-color: $color-principal$color-secundario;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    max-height: fit-content;
+}
+.nos-mision{
+
+    background-color: $color-principal$color-secundario;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    max-height: fit-content;
+}
+
+
+/*NOSOTRAS tb */
+
+/*no mostrar*/
+
+.nosotras{
+    display: none;
+}
+
+
+
+.in-fo{
+    grid-area: info;
+    display: grid;
+    margin: auto;
+    margin: 2rem;
+}
+
+.no-cel{
+    grid-area: foto;
+    display: grid;
+}
+
+
+
+.info-nos{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-areas:
+                        "foto"
+                        "info"
+                        "mainP"
+                        "barra"
+                        "footer";
+    margin-top: 0.3rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.2rem; 
+}
+
+/*MEDIDAS tb */
+
+.m1{
+    grid-area: m1;
+    display: grid;
+    margin: auto;
+}
+
+.m2{
+    grid-area: m2;
+    display: grid;
+    margin: auto;
+}
+
+.main-medidas{
+    display: grid;
+    grid-template-columns: 1rem;
+    grid-template-areas:
+                        "m1 m1 m2 m2"
+                        "mainP  mainP mainP  mainP"
+                        "barra barra barra barra"
+                        "footer footer footer footer";
+    margin-top: 0.3rem;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.2rem; 
+
+}
+.m1{
+    grid-area: m1;
+}
+
+.m2{
+    grid-area: m2;
+}
+
+}
+
+
+@media screen and (min-width:1020px){
+
+/* Home pc */
+
+/*no mostrar*/
+
+.inv-cel{
+    display: none;
+}
+.phone{
+    display: none;
+}
+
+.main-nosotros{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+                        "ban ban ban" 
+                        "invcel imagen4 imagen4"
+                        "amalo amalo amalo"
+                        "mainP mainP mainP"
+                        "barra barra barra"
+                        "footer footer footer";
+    margin-top: 0.3rem;
+    justify-content: center;
+}
+
+.ban2{
+    grid-area: ban;
+    display: grid;
+    justify-content: center;                
+}
+.inv-gr{
+    grid-area: invcel;
+    display: grid;
+    margin: auto;
+            
+}
+.imagen4{
+    grid-area: imagen4;
+    display: grid;          
+}
+
+header .nav-estilo {
+    @include estilo ($color-secundario, 1.5rem,);
+    font-family: 'Open Sans', sans-serif; }
+    header .nav-estilo .navbar-brand {
+    justify-content: center; }
+
+.barra-pie {
+    background-color: $color-secundario;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.amalo-mis{
+
+    background-color: $color-principal$color-secundario;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    max-height: fit-content;
+}
+.nos-mision{
+
+    background-color: $color-principal$color-secundario;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    max-height: fit-content;
+}
+
+
+/*NOSOTRAS PC */
+
+/*no mostrar*/
+
+.nos-cel{
+    display: none;
+}
+
+
+
+.in-fo{
+    grid-area: info;
+    display: grid;
+    margin: auto;
+    margin: 2rem;
+}
+
+.nosotras{
+    grid-area: foto;
+    display: grid;
+    margin: auto;
+}
+
+
+
+.info-nos{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-areas:
+                        "foto info info"
+                        "mainP mainP mainP"
+                        "barra barra barra"
+                        "footer footer footer";
+    margin-top: 0.3rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.2rem; 
+}
+
+/*MEDIDAS PC */
+
+.m1{
+    grid-area: m1;
+    display: grid;
+    margin: auto;
+}
+
+.m2{
+    grid-area: m2;
+    display: grid;
+    margin: auto;
+}
+
+.main-medidas{
+    display: grid;
+    grid-template-columns: 1rem;
+    grid-template-areas:
+                        "m1 m1 m2 m2"
+                        "mainP  mainP mainP  mainP"
+                        "barra barra barra barra"
+                        "footer footer footer footer";
+    margin-top: 0.3rem;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.5rem; 
+
+}
+.m1{
+    grid-area: m1;
+}
+
+.m2{
+    grid-area: m2;
+}
+}
+
+
+
+
+

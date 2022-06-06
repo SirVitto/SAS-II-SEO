@@ -1,0 +1,79 @@
+
+.main-nosotros{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+                            "ban" 
+                            "imagen3"
+                            "invcel"
+                            "amalo"
+                            "mainP"
+                            "barra"
+                            "footer";
+        margin-top: 0.3rem;
+        justify-content: center;
+        .ban1{
+            grid-area: ban;
+            display: grid;
+            justify-content: center;                
+        }
+            }
+
+        .imagen3{
+            grid-area: imagen3;
+            display: grid;
+            justify-content: center;           
+            }
+        
+        .inv-cel{
+            grid-area: invcel;
+            display: grid;
+            justify-content: center;
+        }
+
+        .mis-amalo{
+            @include estilo ($color-secundario, 1.0rem,);
+            display: grid;
+            grid-area: amalo;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            margin-top: $espacio-sepa;
+            justify-content: center;
+            margin: 0.5rem
+            
+        }
+        .nos-mision{
+            @include estilo ($color-secundario, 1rem,);
+            display: flexbox;
+            height: 3rem;
+            grid-area: mainP;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            margin-top: $espacio-sepa;
+            margin: 0.5rem
+            
+        }
+
+.barra-pie{
+    background-color: $color-secundario;
+    margin-top: 0.5rem;
+}
+
+.barra{
+    grid-area: barra;
+    margin-top: 0.2rem;
+}
+
+/* no mostrar en celular*/
+
+.inv-gr{
+    display: none;
+}
+
+.ban2{
+    display: none;
+}
+
+.imagen4{
+    display: none;
+}
